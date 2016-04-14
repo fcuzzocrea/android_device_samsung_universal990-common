@@ -332,6 +332,9 @@ on init
     # Configuration to G2D blocking mode
     write /sys/module/g2d_task/parameters/block_on_contension 1
 
+    # ZRAM setup
+    write /proc/sys/vm/page-cluster 0
+
     setprop ro.boot.hardware.revision ${ro.revision}
 
     start watchdogd
@@ -982,3 +985,8 @@ on property:ro.bootmode=charger
     chmod 0660 /efs/usb_hw_param/usb_hw_param.log
     mkdir /efs/lpm 0775 system system
     class_start charger
+
+on property:sys.boot_completed=1
+    # Enable ZRAM on boot_complete
+    swapon_all /vendor/etc/fstab.${ro.hardware}
+    write /proc/sys/vm/swappiness 100
