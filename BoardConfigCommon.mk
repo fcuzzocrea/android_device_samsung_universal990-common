@@ -174,6 +174,7 @@ BOARD_WPA_SUPPLICANT_DRIVER                   := NL80211
 BOARD_WPA_SUPPLICANT_PRIVATE_LIB              := lib_driver_cmd_bcmdhd
 BOARD_HOSTAPD_DRIVER                          := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB                     := lib_driver_cmd_bcmdhd
+CONFIG_IEEE80211AX                            := true
 WIFI_AVOID_IFACE_RESET_MAC_CHANGE             := true
 WIFI_FEATURE_HOSTAPD_11AX                     := true
 WIFI_HIDL_FEATURE_AWARE                       := true
