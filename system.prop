@@ -14,6 +14,7 @@ ro.fastbootd.available=true
 
 # LKMD
 ro.lmk.log_stats=true
+ro.lmk.use_minfree_levels=true
 
 # RIL
 ro.debug_level=0x494d
