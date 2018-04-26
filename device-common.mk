@@ -19,6 +19,10 @@ COMMON_PATH := device/samsung/universal990-common
 # APEX
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
+# Additional native libraries
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio.effect@5.0-impl:32 \
