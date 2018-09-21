@@ -40,6 +40,15 @@ PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor:64
 
+# Graphics
+PRODUCT_PACKAGES += \
+    android.hardware.composer.hwc3-service.slsi \
+    android.hardware.graphics.allocator@2.0-impl:64 \
+    android.hardware.graphics.allocator@2.0-service \
+    android.hardware.graphics.mapper@2.0-impl-2.1 \
+    gralloc.exynos990 \
+    libion
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0.vendor \
