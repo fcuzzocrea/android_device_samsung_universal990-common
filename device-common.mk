@@ -34,3 +34,6 @@ PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
+
+# Call the proprietary setup
+$(call inherit-product, vendor/samsung/universal9830-common/universal9830-common-vendor.mk)
