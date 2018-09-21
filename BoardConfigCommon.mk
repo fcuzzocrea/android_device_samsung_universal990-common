@@ -129,6 +129,20 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
+# Wi-Fi
+BOARD_WLAN_BCMDHD_SAE                         := true
+BOARD_WLAN_DEVICE                             := bcmdhd
+BOARD_WPA_SUPPLICANT_DRIVER                   := NL80211
+BOARD_WPA_SUPPLICANT_PRIVATE_LIB              := lib_driver_cmd_bcmdhd
+BOARD_HOSTAPD_DRIVER                          := NL80211
+BOARD_HOSTAPD_PRIVATE_LIB                     := lib_driver_cmd_bcmdhd
+WIFI_AVOID_IFACE_RESET_MAC_CHANGE             := true
+WIFI_FEATURE_HOSTAPD_11AX                     := true
+WIFI_HIDL_FEATURE_AWARE                       := true
+WIFI_HIDL_FEATURE_DUAL_INTERFACE              := true
+WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
+WPA_SUPPLICANT_VERSION                        := VER_0_8_X
+
 # Call Samsung LSI board support package
 include hardware/samsung_slsi-linaro/config/BoardConfig990.mk
 
