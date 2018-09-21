@@ -111,6 +111,10 @@ TARGET_BOARD_PLATFORM := universal990
 TARGET_BOOTLOADER_BOARD_NAME := exynos990
 TARGET_SOC := exynos990
 
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
 

@@ -1,0 +1,14 @@
+# Audio
+audio.offload.min.duration.secs=30
+
+# DRM
+drm.service.enabled=true
+
+# Enable CSC for vendor image
+ro.vendor.cscsupported=1
+
+# RIL
+ro.debug_level=0x494d
+
+# Samsung
+ro.product_ship=true
