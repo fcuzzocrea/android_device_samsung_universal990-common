@@ -71,6 +71,13 @@ PRODUCT_SHIPPING_API_LEVEL := 29
 # Soong namespace
 PRODUCT_SOONG_NAMESPACES += $(COMMON_PATH)
 
+# WiFi
+PRODUCT_PACKAGES += \
+    android.hardware.wifi@1.0-service \
+    hostapd \
+    wpa_supplicant \
+    wpa_supplicant.conf
+
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 
