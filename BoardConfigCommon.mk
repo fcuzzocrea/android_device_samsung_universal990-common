@@ -125,3 +125,6 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 
 # Call Samsung LSI board support package
 include hardware/samsung_slsi-linaro/config/BoardConfig990.mk
+
+# Call the proprietary setup
+include vendor/samsung/universal990-common/BoardConfigVendor.mk
