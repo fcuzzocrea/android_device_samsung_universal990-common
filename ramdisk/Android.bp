@@ -1,0 +1,93 @@
+prebuilt_etc {
+    name: "init.samsung.rc",
+    src: "etc/init/hw/init.samsung.rc",
+    sub_dir: "init/hw",
+    recovery_available: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.baseband.rc",
+    src: "etc/init/init.baseband.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.exynos990.rc",
+    src: "etc/init/init.exynos990.rc",
+    sub_dir: "init",
+    recovery_available: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.exynos990.usb.rc",
+    src: "etc/init/init.exynos990.usb.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.gps.rc",
+    src: "etc/init/init.gps.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.recovery.exynos990.rc",
+    src: "etc/init/init.recovery.exynos990.rc",
+    sub_dir: "init",
+    recovery: true,
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.rilchip.rc",
+    src: "etc/init/init.vendor.rilchip.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.vendor.rilcommon.rc",
+    src: "etc/init/init.vendor.rilcommon.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "teegris_v4.rc",
+    src: "etc/init/teegris_v4.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wifi_brcm.rc",
+    src: "etc/init/wifi_brcm.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "wifi_sec.rc",
+    src: "etc/init/wifi_sec.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "fstab.exynos990",
+    src: "etc/fstab.exynos990",
+    vendor: true,
+    ramdisk_available: true,
+}
+
+prebuilt_etc {
+    name: "ueventd.exynos990.rc",
+    filename: "ueventd.rc",
+    src: "etc/ueventd.exynos990.rc",
+    vendor: true,
+}
