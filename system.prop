@@ -1,5 +1,6 @@
 # Audio
 audio.offload.min.duration.secs=30
+ro.config.media_vol_steps=25
 
 # DRM
 drm.service.enabled=true
