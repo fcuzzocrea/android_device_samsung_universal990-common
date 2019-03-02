@@ -886,7 +886,7 @@
     <!-- Safe headphone volume index. When music stream volume is below this index
          the SPL on headphone output is compliant to EN 60950 requirements for portable music
          players. -->
-    <integer name="config_safe_media_volume_index">9</integer>
+    <integer name="config_safe_media_volume_index">15</integer>
 
     <!-- Shutdown if the battery temperature exceeds (this value * 0.1) Celsius. -->
     <integer name="config_shutdownBatteryTemperature">600</integer>
