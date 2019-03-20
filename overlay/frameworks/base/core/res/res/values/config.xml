@@ -932,6 +932,9 @@
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
 
+    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
+    <bool name="config_zramWriteback">true</bool>
+
     <!-- Disables compatibility WAL mode.
          In this mode, only database journal mode will be changed, connection pool
          size will still be limited to a single connection. -->
