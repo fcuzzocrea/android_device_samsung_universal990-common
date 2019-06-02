@@ -110,6 +110,10 @@ PRODUCT_PACKAGES += \
     android.hardware.keymaster@4.0-service.samsung \
     libkeymaster4_1support.vendor:64
 
+# Livedisplay
+PRODUCT_PACKAGES += \
+    vendor.lineage.livedisplay@2.0-service.exynos990
+
 # Media
 PRODUCT_PACKAGES += \
     libExynosOMX_Core \
