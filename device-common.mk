@@ -91,6 +91,10 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.3-service.samsung \
     init.udfps.rc
 
+# FlipFlap
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl:64 \
