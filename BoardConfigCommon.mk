@@ -99,6 +99,9 @@ BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --dtb_offset 0x0000000
 BOARD_KERNEL_PAGESIZE := 2048
 TARGET_KERNEL_SOURCE := kernel/samsung/universal9830
 
+# Keymaster
+TARGET_KEYMASTER_VARIANT := samsung
+
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
 
