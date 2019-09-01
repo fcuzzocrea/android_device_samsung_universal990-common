@@ -67,6 +67,11 @@ if [ -z "${SRC}" ]; then
 fi
 
 function blob_fixup() {
+    case "${1}" in
+        vendor/bin/hw/rild)
+            "${PATCHELF}" --replace-needed libril.so libril-samsung.so "${2}"
+            ;;
+    esac
 }
 
 if [ -z "${ONLY_TARGET}" ]; then
