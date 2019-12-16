@@ -10,6 +10,9 @@ ro.vendor.cscsupported=1
 # Fastbootd
 ro.fastbootd.available=true
 
+# LKMD
+ro.lmk.log_stats=true
+
 # RIL
 ro.debug_level=0x494d
 
