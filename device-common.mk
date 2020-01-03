@@ -275,6 +275,10 @@ PRODUCT_PACKAGES += \
     init.vendor.rilcommon.rc \
     secril_config_svc
 
+# SamsungDoze
+PRODUCT_PACKAGES += \
+    SamsungDoze
+
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor:64
