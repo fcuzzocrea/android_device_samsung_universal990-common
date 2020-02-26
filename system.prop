@@ -7,6 +7,9 @@ drm.service.enabled=true
 # Enable CSC for vendor image
 ro.vendor.cscsupported=1
 
+# Fastbootd
+ro.fastbootd.available=true
+
 # RIL
 ro.debug_level=0x494d
 
