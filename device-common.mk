@@ -233,6 +233,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# PowerShare
+PRODUCT_PACKAGES += \
+    vendor.lineage.powershare@1.0-service.samsung
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.exynos990 \
