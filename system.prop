@@ -3,6 +3,10 @@ audio.offload.min.duration.secs=30
 ro.config.media_vol_steps=25
 ro.config.vc_call_vol_steps=7
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+ro.sys.fw.dex2oat_thread_count=8
+
 # DRM
 drm.service.enabled=true
 
