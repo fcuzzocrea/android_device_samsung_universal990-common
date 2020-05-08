@@ -719,6 +719,8 @@ on boot
     chown system system /sys/class/sec/sdinfo/data
     chown system system /sys/class/sec/sdinfo/fc
 
-# BATTERY
 on property:sys.boot_completed=1
+    # BATTERY
     write /sys/class/power_supply/battery/boot_completed "1"
+    #Reinit lmkd to reconfigure lmkd properties
+    setprop lmkd.reinit 1    
