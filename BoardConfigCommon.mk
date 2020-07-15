@@ -107,6 +107,7 @@ BOARD_CUSTOM_BOOTIMG := true
 BOARD_MKBOOTIMG_ARGS := --base 0x10000000 --pagesize 2048 --dtb_offset 0x00000000 --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100  --header_version 2  
 #BOARD_KERNEL_CMDLINE := The bootloader ignores the cmdline from the boot.img
 BOARD_KERNEL_PAGESIZE := 2048
+BOARD_RAMDISK_USE_LZ4 := true
 TARGET_KERNEL_CLANG_VERSION := r416183b
 TARGET_KERNEL_CLANG_PATH := $(abspath .)/prebuilts/clang/kernel/$(HOST_PREBUILT_TAG)/clang-$(TARGET_KERNEL_CLANG_VERSION)
 TARGET_KERNEL_LLVM_BINUTILS := false
