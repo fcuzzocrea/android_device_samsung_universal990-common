@@ -239,6 +239,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.contexthub@1.0.vendor:64
 
+# Shims
+PRODUCT_PACKAGES += \
+    libsensorndkbridge_shim
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 

@@ -71,6 +71,9 @@ function blob_fixup() {
         vendor/bin/hw/rild)
             "${PATCHELF}" --replace-needed libril.so libril-samsung.so "${2}"
             ;;
+        vendor/lib*/libsensorlistener.so)
+            "${PATCHELF}" --add-needed libsensorndkbridge_shim.so "${2}"
+            ;;
     esac
 }
 
