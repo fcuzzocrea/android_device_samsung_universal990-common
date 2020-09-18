@@ -26,6 +26,13 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# HIDL
+PRODUCT_PACKAGES += \
+    libhidltransport \
+    libhidltransport.vendor \
+    libhwbinder \
+    libhwbinder.vendor
+
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
 
