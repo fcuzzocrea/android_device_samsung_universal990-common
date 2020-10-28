@@ -47,3 +47,6 @@ vendor.sec.rild.libpath2=/vendor/lib64/libsec-ril-dsds.so
 
 # WiFi
 wifi.direct.interface=p2p-dev-wlan0
+
+# Zygote
+zygote.critical_window.minute=10
