@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     libhwjpeg \
     libsensorndkbridge
 
+# Configstore
+PRODUCT_PACKAGES += \
+    disable_configstore
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor:32 \
