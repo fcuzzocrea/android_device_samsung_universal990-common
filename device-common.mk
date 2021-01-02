@@ -23,6 +23,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
+# Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.5-service_64
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3.vendor:32
