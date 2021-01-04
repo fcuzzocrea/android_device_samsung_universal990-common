@@ -28,6 +28,7 @@ ro.hardware.egl=mali
 ro.hardware.gralloc=exynos990
 ro.hardware.vulkan=mali
 ro.opengles.version=196610
+ro.surface_flinger.display_update_imminent_timeout_ms=50
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
