@@ -46,6 +46,24 @@ on init
     chown system system /dev/cpuset/sf/cpus
     write /dev/cpuset/sf/cpus 0-7
 
+    mkdir /dev/cpuset/camera-daemon-high-group
+    write /dev/cpuset/camera-daemon-high-group/cpus 0-7
+    write /dev/cpuset/camera-daemon-high-group/mems 0
+    chown system system /dev/cpuset/camera-daemon-high-group/tasks
+    chmod 0664 /dev/cpuset/camera-daemon-high-group/tasks
+
+    mkdir /dev/cpuset/camera-daemon-mid-group
+    write /dev/cpuset/camera-daemon-mid-group/cpus 0-7
+    write /dev/cpuset/camera-daemon-mid-group/mems 0
+    chown system system /dev/cpuset/camera-daemon-mid-group/tasks
+    chmod 0664 /dev/cpuset/camera-daemon-mid-group/tasks
+
+    mkdir /dev/cpuset/camera-daemon-mid-high-group
+    write /dev/cpuset/camera-daemon-mid-high-group/cpus 0-7
+    write /dev/cpuset/camera-daemon-mid-high-group/mems 0
+    chown system system /dev/cpuset/camera-daemon-mid-high-group/tasks
+    chmod 0664 /dev/cpuset/camera-daemon-mid-high-group/tasks
+
     chown system system /dev/cpuset/tasks
     chown system system /dev/cpuset/cgroup.procs
     chmod 0664 /dev/cpuset/tasks
