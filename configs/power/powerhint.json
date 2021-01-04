@@ -1,0 +1,401 @@
+{
+    "Nodes": [
+        {
+            "Name": "CPUHotplugMaxCores",
+            "Path": "/sys/power/cpuhp/set_online_cpu",
+            "Values": [
+                "0xff",
+                "0x3f"
+            ],
+            "Comments": [
+                "0xff => All cores enabled",
+                "0x3f => Big cores disabled"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "PCIE_PSM_DISABLE",
+            "Path": "/sys/devices/platform/133b0000.pcie/pcie_sysfs",
+            "Values": [
+                "14",
+                "13"
+            ],
+            "Comments": [
+                "14 => L1.2 Enable",
+                "13 => L1.2 Disable"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "MIFMinFreq",
+            "Path": "/sys/devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/scaling_devfreq_min",
+            "Values": [
+                "2730000",
+                "-1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "CPUMaxFreq",
+            "Path": "/sys/power/cpufreq_max_limit",
+            "Values": [
+                "1895537",
+                "-1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "CPUMinFreq",
+            "Path": "/sys/power/cpufreq_min_limit",
+            "Values": [
+                "2730000",
+                "-1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "GpuMinClock",
+            "Path": "/sys/kernel/gpu/gpu_min_clock",
+            "Values": [
+                "572000",
+                "-1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "GpuMaxClock",
+            "Path": "/sys/kernel/gpu/gpu_max_clock",
+            "Values": [
+                "702000",
+                "455000",
+                "-1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "LPMDisable",
+            "Path": "/sys/power/cstate_control",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "KERNEL_APP_START_NOTIFY",
+            "Path": "/sys/kernel/mm/vmscan/am_app_launch",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "EMSTUNE_REQMODE",
+            "Path": "/sys/kernel/ems/emstune/req_mode",
+            "Values": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4",
+                "5",
+                "6",
+                "7"
+            ],
+            "Comments": [
+                "0 => Normal Mode",
+                "1 => Power-Scenario Mode",
+                "2 => Performance Mode",
+                "3 => Light-Game Mode",
+                "4 => Light-Video Mode",
+                "5 => Balance Mode",
+                "6 => Pinned Mode",
+                "7 => Game-Mode"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "EXECUTION_MODE_CHANGE",
+            "Path": "/sys/power/execution_mode_change",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TOUCH_HEAD",
+            "Path": "/sys/class/input_booster/touch/head",
+            "Values": [
+                "130 1066000 1404000 806000 1014000 0 2 1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TOUCH_TAIL",
+            "Path": "/sys/class/input_booster/touch/tail",
+            "Values": [
+                "500 858000 1222000 806000 1014000 0 2 1"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TOUCH_LEVEL",
+            "Path": "/sys/class/input_booster/touch/level",
+            "Values": [
+                "2"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TASchedtuneBoost",
+            "Path": "/dev/stune/top-app/schedtune.boost",
+            "Values": [
+                "30",
+                "10"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "PMQoSCpuDmaLatency",
+            "Path": "/dev/cpu_dma_latency",
+            "Values": [
+                "2c",
+                "64"
+            ],
+            "HoldFd": true
+        },
+        {
+            "Name": "DoubleTapToWakeEnable",
+            "Path": "/sys/class/sec/tsp/cmd",
+            "Values": [
+                "aot_enable,0",
+                "aot_enable,1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": false
+        },
+        {
+            "Name": "TouchscreenEnable",
+            "Path": "/sys/class/sec/tsp/input/enabled",
+            "Values": [
+                "1",
+                "0"
+            ],
+            "ResetOnInit": true
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1895537"
+        },
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "GpuMaxClock",
+            "Duration": 0,
+            "Value": "455000"
+        },
+        {
+            "PowerHint": "SUSTAINED_PERFORMANCE",
+            "Node": "EMSTUNE_REQMODE",
+            "Duration": 0,
+            "Value": "2"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "EMSTUNE_REQMODE",
+            "Duration": 0,
+            "Value": "5"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "TASchedtuneBoost",
+            "Duration": 0,
+            "Value": "30"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "LPMDisable",
+            "Duration": 5000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "KERNEL_APP_START_NOTIFY",
+            "Duration": 5000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 5000,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "CAMERA_LAUNCH",
+            "Node": "LPMDisable",
+            "Duration": 1000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_LAUNCH",
+            "Node": "KERNEL_APP_START_NOTIFY",
+            "Duration": 1000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 1000,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_HIGH",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1895537"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_HIGH",
+            "Node": "LPMDisable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_MID",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1895537"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_MID",
+            "Node": "LPMDisable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_LOW",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1895537"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_LOW",
+            "Node": "LPMDisable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_SECURE",
+            "Node": "CPUMaxFreq",
+            "Duration": 0,
+            "Value": "1895537"
+        },
+        {
+            "PowerHint": "CAMERA_STREAMING_SECURE",
+            "Node": "LPMDisable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_SHOT",
+            "Node": "MIFMinFreq",
+            "Duration": 300,
+            "Value": "2730000"
+        },
+        {
+            "PowerHint": "CAMERA_SHOT",
+            "Node": "LPMDisable",
+            "Duration": 1000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "CAMERA_SHOT",
+            "Node": "CPUMinFreq",
+            "Duration": 300,
+            "Value": "2730000"
+        },
+        {
+            "PowerHint": "CAMERA_SHOT",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 300,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "AUDIO_LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 2000,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 0,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GpuMinClock",
+            "Duration": 0,
+            "Value": "572000"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GpuMaxClock",
+            "Duration": 0,
+            "Value": "702000"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "CPUMinFreq",
+            "Duration": 0,
+            "Value": "2730000"
+        },
+        {
+            "PowerHint": "FIXED_PERFORMANCE",
+            "Node": "EMSTUNE_REQMODE",
+            "Duration": 0,
+            "Value": "2"
+        },
+        {
+            "PowerHint": "LOW_POWER",
+            "Node": "CPUHotplugMaxCores",
+            "Duration": 0,
+            "Value": "0x3f"
+        },
+        {
+            "PowerHint": "LOW_POWER",
+            "Node": "EMSTUNE_REQMODE",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "ML_ACC",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 2000,
+            "Value": "2c"
+        },
+        {
+            "PowerHint": "INTERACTIVE",
+            "Node": "TouchscreenEnable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "DOUBLE_TAP_TO_WAKE",
+            "Node": "DoubleTapToWakeEnable",
+            "Duration": 0,
+            "Value": "aot_enable,1"
+        }
+    ]
+}
