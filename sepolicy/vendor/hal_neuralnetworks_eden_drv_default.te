@@ -17,8 +17,6 @@ allow hal_neuralnetworks_eden_drv_default {
     ion_device
 }:chr_file rw_file_perms;
 
-allow hal_neuralnetworks_eden_drv_default debugfs_tracing: file r_file_perms;
-
 allow hal_neuralnetworks_eden_drv_default {
     sysfs_gpu
     sysfs_npu_version
