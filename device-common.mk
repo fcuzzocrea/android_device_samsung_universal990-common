@@ -90,6 +90,17 @@ PRODUCT_PACKAGES += \
     android.hardware.neuralnetworks@1.3.vendor \
     libtextclassifier_hash.vendor
 
+# NFC
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.samsung \
+    com.android.nfc_extras \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_PRODUCT)/etc/libnfc-nci.conf \
+    $(COMMON_PATH)/configs/nfc/libnfc-sec-vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-sec-vendor.conf \
+    $(COMMON_PATH)/configs/nfc/nfcee_access.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/nfcee_access.xml
+
 # Permissions
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/permissions/com.samsung.permission.HRM_EXT.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.samsung.permission.HRM_EXT.xml \
