@@ -44,6 +44,13 @@ prebuilt_etc {
 }
 
 prebuilt_etc {
+    name: "init.udfps.rc",
+    src: "etc/init/init.udfps.rc",
+    sub_dir: "init",
+    vendor: true,
+}
+
+prebuilt_etc {
     name: "init.vendor.rilchip.rc",
     src: "etc/init/init.vendor.rilchip.rc",
     sub_dir: "init",
