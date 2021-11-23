@@ -252,6 +252,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     init.exynos990.usb.rc
 
+# Vibrator
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
+
 # WiFi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
