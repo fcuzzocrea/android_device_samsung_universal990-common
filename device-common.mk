@@ -23,15 +23,47 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 TARGET_BOOTANIMATION_PRELOAD := true
 TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3.vendor:32
+
 # Dynamic Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# GNSS
+PRODUCT_PACKAGES += \
+    android.hardware.gnss@2.1.vendor:64
+
 # HIDL
 PRODUCT_PACKAGES += \
+    android.hidl.allocator@1.0.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor
+
+# Neuralnetworks
+PRODUCT_PACKAGES += \
+    android.hardware.neuralnetworks@1.3.vendor \
+    libtextclassifier_hash.vendor
+
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power@1.0.vendor:64
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4.vendor:64 \
+    android.hardware.radio.config@1.2.vendor:64 \
+    android.hardware.radio.deprecated@1.0.vendor:64
+
+# Secure Element
+PRODUCT_PACKAGES += \
+    android.hardware.secure_element@1.2.vendor:64
+
+# Sensors
+PRODUCT_PACKAGES += \
+    android.hardware.contexthub@1.0.vendor:64
 
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 29
