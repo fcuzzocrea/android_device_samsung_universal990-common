@@ -290,6 +290,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
+    android.hardware.usb-service.samsung \
     init.exynos990.usb.rc
 
 # Vibrator
