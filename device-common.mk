@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudioroute \
     libtinyalsa \
-    libtinycompress
+    libtinycompress \
+    SamsungDAP
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
