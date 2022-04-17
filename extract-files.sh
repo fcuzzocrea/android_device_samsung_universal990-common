@@ -71,6 +71,10 @@ function blob_fixup() {
         vendor/bin/hw/rild)
             "${PATCHELF}" --replace-needed libril.so libril-samsung.so "${2}"
             ;;
+        vendor/lib/hw/audio.primary.exynos990.so)
+            "${PATCHELF}" --add-needed libaudioparams_shim.so "${2}"
+            sed -i 's/str_parms_get_str/str_parms_get_mod/g' "${2}"
+            ;;
         vendor/lib*/libsensorlistener.so)
             "${PATCHELF}" --add-needed libsensorndkbridge_shim.so "${2}"
             ;;
