@@ -12,6 +12,9 @@ ro.vendor.cscsupported=1
 # Fastbootd
 ro.fastbootd.available=true
 
+# HWUI
+debug.hwui.skia_atrace_enabled=false
+
 # LKMD
 ro.lmk.log_stats=true
 
