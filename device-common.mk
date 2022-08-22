@@ -62,6 +62,10 @@ PRODUCT_PACKAGES += \
     libhwjpeg \
     libsensorndkbridge
 
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images_vendor
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -92,6 +96,11 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl-2.1 \
     gralloc.exynos990 \
     libion
+
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery
 
 # HIDL
 PRODUCT_PACKAGES += \
