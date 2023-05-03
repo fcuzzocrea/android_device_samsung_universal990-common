@@ -1,0 +1,14 @@
+# rild.te
+
+allow rild {
+    hal_camera_default
+    hal_secure_element_default
+}:dir search;
+
+allow rild {
+    hal_camera_default
+    hal_secure_element_default
+}:file r_file_perms;
+
+set_prop(rild, vendor_radio_prop)
+set_prop(rild, radio_prop)
