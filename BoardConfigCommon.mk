@@ -158,6 +158,12 @@ BOARD_SECCOMP_POLICY += $(COMMON_PATH)/seccomp
 # Security
 VENDOR_SECURITY_PATCH := 2023-03-01
 
+# SELinux
+include device/lineage/sepolicy/exynos/sepolicy.mk
+BOARD_SEPOLICY_TEE_FLAVOR := teegris
+include device/samsung_slsi/sepolicy/sepolicy.mk
+BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
