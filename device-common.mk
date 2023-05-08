@@ -26,6 +26,7 @@ TARGET_BOOTANIMATION_TEXTURE_CACHE := true
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.5-service_64 \
+    libhwjpeg \
     libsensorndkbridge
 
 # DRM
