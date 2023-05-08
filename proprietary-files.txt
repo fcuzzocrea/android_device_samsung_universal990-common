@@ -1,4 +1,4 @@
-# All unpinned blobs are from FXXUFHWB1
+# All unpinned blobs are from FXXUGHWCG
 # Vendor security patch level 2023-03-01
 
 # Audio
