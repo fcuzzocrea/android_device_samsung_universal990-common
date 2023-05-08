@@ -2,20 +2,13 @@
 # Vendor security patch level 2023-03-01
 
 # Audio
--vendor/lib/hw/audio.primary.exynos990.so
--vendor/lib/hw/vendor.samsung.hardware.audio@1.0-impl.so
 -vendor/lib/libSamsungPostProcessConvertor.so
--vendor/lib/lib_SamsungRec_08020.so
 -vendor/lib/lib_SoundAlive_SRC384_ver320.so
--vendor/lib/lib_lvacfs.so
 -vendor/lib/lib_soundaliveresampler.so
--vendor/lib/libaboxpcmdump.so
 -vendor/lib/libalsautils_sec.so
 -vendor/lib/libaudioparamupdate.so
 -vendor/lib/libaudioproxy.so
--vendor/lib/libdatamod.so
 -vendor/lib/libfloatingfeature.so
--vendor/lib/liblastaboxmsg.so
 -vendor/lib/libprofileparamstorage.so
 -vendor/lib/libsecaudiocoreutils.so
 -vendor/lib/libsecaudioinfo.so
@@ -24,6 +17,7 @@
 -vendor/lib/vendor.samsung_slsi.hardware.ExynosA2DPOffload@3.0.so
 -vendor/lib/vndk/libaudioroute.so;MODULE=libaudioroute.exynos990
 -vendor/lib/vndk/libtinyalsa.so;MODULE=libtinyalsa.exynos990
+-vendor/lib64/libaudioproxy.so
 
 # Audio (Firmware)
 vendor/firmware/APSV_AUDIO_SLSI.bin
