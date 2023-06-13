@@ -1,5 +1,5 @@
-# All unpinned blobs are from FXXSGHWD4
-# Vendor security patch level 2023-05-01
+# All unpinned blobs are from UHHWED
+# Vendor security patch level 2023-06-01
 
 # Audio
 -vendor/lib/hw/audio.primary.exynos990.so
