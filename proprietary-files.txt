@@ -1,4 +1,4 @@
-# All unpinned blobs are from SIHWGA
+# All unpinned blobs are from UIHWH9
 # Vendor security patch level 2023-08-01
 
 # Audio
