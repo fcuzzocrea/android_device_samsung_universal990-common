@@ -87,7 +87,6 @@ vendor/firmware/bcmdhd_sta.bin_b1
 -vendor/lib/vendor.samsung.hardware.bluetooth.a2dp@1.0.so
 
 # Camera
--vendor/lib64/libGrallocMapperCamera.so
 -vendor/lib64/libSEF.quram.so
 -vendor/lib64/libbayergdccore.so
 -vendor/lib64/libexynoscamera_fakefusion.so
